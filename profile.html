@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakr</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container-fluid m-0 p-0">
+        <aside class="h-100">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="logo" />
+                    <span>Speakr</span>
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="assets/icons/home.svg" alt="home" class="hidden-mobile" />
+                        <img src="assets/icons/home-mobile.svg" alt="home" class="hidden-desktop" />
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html">
+                        <img src="assets/icons/files.svg" alt="files" class="hidden-mobile" />
+                        <img src="assets/icons/files-mobile.svg" alt="home" class="hidden-desktop" />
+                        My files
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="profile.html">
+                        <img src="assets/icons/profile.svg" alt="profile" class="hidden-mobile" />
+                        <img src="assets/icons/profile-mobile-active.svg" alt="home" class="hidden-desktop" />
+                        Profile<span class="hidden-mobile">&nbsp;(Coming)</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="container m-0 p-0">
+            <div class="top">
+                <div class="title">Profile</div>
+                <div class="account">
+                    <span class="type">PRO</span>
+                    <span class="name">Michael Scofield</span>
+                    <span class="logo">
+                        <img src="assets/images/profile.png" alt="account" />
+                    </span>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="profile" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                                <path d="M6.00001 5.86666C5.61869 5.86666 5.23774 5.71965 4.94905 5.43095L0.602382 1.08429C0.539223 1.02113 0.539223 0.912184 0.602382 0.849025C0.665541 0.785866 0.774486 0.785866 0.837644 0.849025L5.18431 5.19569C5.63449 5.64587 6.36554 5.64587 6.81572 5.19569L11.1624 0.849025C11.2255 0.785867 11.3345 0.785867 11.3976 0.849025C11.4608 0.912184 11.4608 1.02113 11.3976 1.08429L7.05098 5.43095C6.76229 5.71965 6.38133 5.86666 6.00001 5.86666Z" fill="white" stroke="#637381" stroke-width="0.666667"/>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="profile">
+                          <li><a class="dropdown-item" href="#">Subscription (Coming)</a></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+            <div class="container main-container profile">
+                <p>Coming soon</p>
+                <a href="#" class="logout">Logout</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

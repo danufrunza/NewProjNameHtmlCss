@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakr</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container-fluid m-0 p-0">
+        <aside class="h-100">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="logo" />
+                    <span>Speakr</span>
+                </a>
+            </div>
+            <ul>
+                <li class="active">
+                    <a href="index.html">
+                        <img src="assets/icons/home.svg" alt="home" class="hidden-mobile" />
+                        <img src="assets/icons/home-mobile-active.svg" alt="home" class="hidden-desktop" />
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html">
+                        <img src="assets/icons/files.svg" alt="files" class="hidden-mobile" />
+                        <img src="assets/icons/files-mobile.svg" alt="home" class="hidden-desktop" />
+                        My files
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <img src="assets/icons/profile.svg" alt="profile" class="hidden-mobile" />
+                        <img src="assets/icons/profile-mobile.svg" alt="home" class="hidden-desktop" />
+                        Profile<span class="hidden-mobile">&nbsp;(Coming)</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="container m-0 p-0">
+            <div class="top">
+                <div class="title">Home</div>
+                <div class="account">
+                    <span class="type">PRO</span>
+                    <span class="name">Michael Scofield</span>
+                    <span class="logo">
+                        <img src="assets/images/profile.png" alt="account" />
+                    </span>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="profile" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                                <path d="M6.00001 5.86666C5.61869 5.86666 5.23774 5.71965 4.94905 5.43095L0.602382 1.08429C0.539223 1.02113 0.539223 0.912184 0.602382 0.849025C0.665541 0.785866 0.774486 0.785866 0.837644 0.849025L5.18431 5.19569C5.63449 5.64587 6.36554 5.64587 6.81572 5.19569L11.1624 0.849025C11.2255 0.785867 11.3345 0.785867 11.3976 0.849025C11.4608 0.912184 11.4608 1.02113 11.3976 1.08429L7.05098 5.43095C6.76229 5.71965 6.38133 5.86666 6.00001 5.86666Z" fill="white" stroke="#637381" stroke-width="0.666667"/>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="profile">
+                          <li><a class="dropdown-item" href="#">Subscription (Coming)</a></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+            <div class="container main-container">
+                <span class="title">Type & Listen</span>
+                <div class="cards">
+                    <button type="button" class="card" data-bs-toggle="modal" data-bs-target="#modal-1">
+                        <div class="info">
+                            <span class="title">Type or Paste Text</span>
+                            <span class="description">You can write or paste</span>
+                        </div>
+                        <div class="image">
+                            <img src="assets/icons/card-icon-1.svg" alt="card-icon-1" />
+                        </div>
+                    </button>
+                    <button type="button" class="card" data-bs-toggle="modal" data-bs-target="#modal-2">
+                        <div class="info">
+                            <span class="title">Upload a document</span>
+                            <span class="description">In Word format</span>
+                        </div>
+                        <div class="image">
+                            <img src="assets/icons/card-icon-2.svg" alt="card-icon-2" />
+                        </div>
+                    </button>
+                    <button type="button" class="card" data-bs-toggle="modal" data-bs-target="#modal-3">
+                        <div class="info">
+                            <span class="title">Read from URL</span>
+                            <span class="description">Paste any link and listen</span>
+                        </div>
+                        <div class="image">
+                            <img src="assets/icons/card-icon-3.svg" alt="card-icon-3" />
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="modal-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-1">Paste or Write text</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.70711 3.29289C4.31658 2.90237 3.68342 2.90237 3.29289 3.29289C2.90237 3.68342 2.90237 4.31658 3.29289 4.70711L6.58579 8L3.29289 11.2929C2.90237 11.6834 2.90237 12.3166 3.29289 12.7071C3.68342 13.0976 4.31658 13.0976 4.70711 12.7071L8 9.41421L11.2929 12.7071C11.6834 13.0976 12.3166 13.0976 12.7071 12.7071C13.0976 12.3166 13.0976 11.6834 12.7071 11.2929L9.41421 8L12.7071 4.70711C13.0976 4.31658 13.0976 3.68342 12.7071 3.29289C12.3166 2.90237 11.6834 2.90237 11.2929 3.29289L8 6.58579L4.70711 3.29289Z" fill="#6B6D80"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <textarea class="form-control" rows="3" placeholder="Paste or write any text to listen"></textarea>
+                    <div class="count">
+                        0/3 000
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+                    <button type="button" class="btn btn-primary">Listen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="modal-2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-2">Drop one file here or browse file</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.70711 3.29289C4.31658 2.90237 3.68342 2.90237 3.29289 3.29289C2.90237 3.68342 2.90237 4.31658 3.29289 4.70711L6.58579 8L3.29289 11.2929C2.90237 11.6834 2.90237 12.3166 3.29289 12.7071C3.68342 13.0976 4.31658 13.0976 4.70711 12.7071L8 9.41421L11.2929 12.7071C11.6834 13.0976 12.3166 13.0976 12.7071 12.7071C13.0976 12.3166 13.0976 11.6834 12.7071 11.2929L9.41421 8L12.7071 4.70711C13.0976 4.31658 13.0976 3.68342 12.7071 3.29289C12.3166 2.90237 11.6834 2.90237 11.2929 3.29289L8 6.58579L4.70711 3.29289Z" fill="#6B6D80"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <label for="file-upload" class="custom-file-upload">
+                        <span>Drop here</span>
+                        <input type="file" id="file-upload" name="file-upload">
+                    </label>                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+                    <button type="button" class="btn btn-primary">Browse file</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
