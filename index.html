@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speakr</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+    <title>NewProjName</title>
+ 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container-fluid m-0 p-0">
-        <aside class="h-100">
+        <aside class="h-100" id="aside-menu">
             <div class="logo">
                 <a href="index.html">
-                    <img src="assets/images/logo.png" alt="logo" />
-                    <span>Speakr</span>
+             
+                    <span>NewProjName</span>
                 </a>
             </div>
             <ul>
@@ -36,13 +36,13 @@
                     <a href="profile.html">
                         <img src="assets/icons/profile.svg" alt="profile" class="hidden-mobile" />
                         <img src="assets/icons/profile-mobile.svg" alt="home" class="hidden-desktop" />
-                        Profile<span class="hidden-mobile">&nbsp;(Coming)</span>
+                        Profile<span class="hidden-mobile"></span>
                     </a>
                 </li>
             </ul>
         </aside>
         <div class="container m-0 p-0">
-            <div class="top">
+            <div class="top" id="top-menu">
                 <div class="title">Home</div>
                 <div class="account">
                     <span class="type">PRO</span>
@@ -58,12 +58,12 @@
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="profile">
                           <li><a class="dropdown-item" href="#">Subscription (Coming)</a></li>
-                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                          <li><a class="dropdown-item" href="login.html">Logout</a></li>
                         </ul>
                       </div>
                 </div>
             </div>
-            <div class="container main-container">
+            <div class="container main-container content-block">
                 <span class="title">Type & Listen</span>
                 <div class="cards">
                     <button type="button" class="card" data-bs-toggle="modal" data-bs-target="#modal-1">
@@ -84,7 +84,7 @@
                             <img src="assets/icons/card-icon-2.svg" alt="card-icon-2" />
                         </div>
                     </button>
-                    <button type="button" class="card" data-bs-toggle="modal" data-bs-target="#modal-3">
+                    <button type="button" class="card"  >
                         <div class="info">
                             <span class="title">Read from URL</span>
                             <span class="description">Paste any link and listen</span>
@@ -116,7 +116,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
-                    <button type="button" class="btn btn-primary">Listen</button>
+                    <button type="button" class="btn btn-primary listen-button">Listen</button>
                 </div>
             </div>
         </div>
@@ -140,12 +140,15 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
-                    <button type="button" class="btn btn-primary">Browse file</button>
+                    <button type="button" class="btn btn-primary listen-button">Browse file</button>
                 </div>
             </div>
         </div>
     </div>
+	
+	 <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/resize.js"></script>
 </body>
 </html>

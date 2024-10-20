@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speakr</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+    <title>NewProjName</title> 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container-fluid m-0 p-0">
-        <aside class="h-100">
+        <aside class="h-100" id="aside-menu">
             <div class="logo">
                 <a href="index.html">
-                    <img src="assets/images/logo.png" alt="logo" />
-                    <span>Speakr</span>
+                   <span>NewProjName</span>
                 </a>
             </div>
             <ul>
@@ -36,13 +34,13 @@
                     <a href="profile.html">
                         <img src="assets/icons/profile.svg" alt="profile" class="hidden-mobile" />
                         <img src="assets/icons/profile-mobile.svg" alt="home" class="hidden-desktop" />
-                        Profile<span class="hidden-mobile">&nbsp;(Coming)</span>
+                        Profile<span class="hidden-mobile"></span>
                     </a>
                 </li>
             </ul>
         </aside>
-        <div class="container m-0 p-0">
-            <div class="top">
+        <div class="container m-0 p-0 " >
+            <div class="top" id="top-menu">
                 <div class="title">My files</div>
                 <div class="search">
                     <img src="assets/icons/search.svg" alt="search" id="search-submit" />
@@ -77,12 +75,12 @@
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="profile">
                           <li><a class="dropdown-item" href="#">Subscription (Coming)</a></li>
-                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                          <li><a class="dropdown-item" href="login.html">Logout</a></li>
                         </ul>
                       </div>
                 </div>
             </div>
-            <div class="container main-container files">
+            <div class="container main-container content-block files">
                 <div class="main">
                     <p>Folders</p>
                     <button>
@@ -612,7 +610,10 @@
             </div>
         </div>
     </div>
+     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/resize.js"></script>
 </body>
 </html>
